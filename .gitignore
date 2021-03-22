@@ -6,5 +6,5 @@ tmp\ copy
 *.bak
 .phpunit.result.cache
 mysqlFimex.sql
-app/*
-services/db/*
+app/
+services/db/

@@ -60,4 +60,4 @@ RUN apt-get clean \
     && rm -fr /var/lib/apt/lists/* \
     && rm -fr /tmp/* \
     && rm -fr /var/tmp/*
-WORKDIR /app
+WORKDIR /var/www/html

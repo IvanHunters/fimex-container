@@ -6,3 +6,9 @@ Docker Fimex
 ```
 docker-compose up -d
 ```
+
+
+Host for phpmyadmin:
+```
+host.docker.internal
+```
