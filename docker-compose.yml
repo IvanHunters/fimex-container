@@ -23,8 +23,11 @@ services:
       - db
     volumes:
       - ./app:/var/www/html
-      - ./services/php/conf.d/custom-php.ini:/usr/local/etc/php/conf.d/zz-custom.ini
+      - ./services/php/conf.d/custom-php.ini:/usr/local/etc/php/php.ini
       - ./services/php/.bashrc:/root/.bashrc
+    environment:
+      XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+      PHP_IDE_CONFIG: "serverName=fimex"
     env_file: .env
 
   redis:
