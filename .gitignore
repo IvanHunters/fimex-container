@@ -1,0 +1,10 @@
+.idea
+.env
+vendor
+tmp
+tmp\ copy
+*.bak
+.phpunit.result.cache
+mysqlFimex.sql
+app/*
+services/db/*
